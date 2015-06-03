@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93C3ED451B1F38260019696F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C3ED441B1F38260019696F /* AppDelegate.swift */; };
-		93C3ED471B1F38260019696F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C3ED461B1F38260019696F /* ViewController.swift */; };
 		93C3ED491B1F38260019696F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C3ED481B1F38260019696F /* Images.xcassets */; };
-		93C3ED4C1B1F38260019696F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C3ED4A1B1F38260019696F /* Main.storyboard */; };
 		93C3ED581B1F38260019696F /* MoeJpDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C3ED571B1F38260019696F /* MoeJpDownloaderTests.swift */; };
+		93C831311B1F421100129118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8312F1B1F421100129118 /* AppDelegate.swift */; };
+		93C831321B1F421100129118 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C831301B1F421100129118 /* ViewController.swift */; };
+		93C831371B1F421E00129118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C831351B1F421E00129118 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +27,13 @@
 /* Begin PBXFileReference section */
 		93C3ED3F1B1F38260019696F /* MoeJpDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoeJpDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C3ED431B1F38260019696F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93C3ED441B1F38260019696F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93C3ED461B1F38260019696F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93C3ED481B1F38260019696F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		93C3ED4B1B1F38260019696F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93C3ED511B1F38260019696F /* MoeJpDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoeJpDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C3ED561B1F38260019696F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93C3ED571B1F38260019696F /* MoeJpDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoeJpDownloaderTests.swift; sourceTree = "<group>"; };
+		93C8312F1B1F421100129118 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93C831301B1F421100129118 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93C831361B1F421E00129118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +75,9 @@
 		93C3ED411B1F38260019696F /* MoeJpDownloader */ = {
 			isa = PBXGroup;
 			children = (
-				93C3ED441B1F38260019696F /* AppDelegate.swift */,
-				93C3ED461B1F38260019696F /* ViewController.swift */,
+				93C8312E1B1F421100129118 /* Classes */,
+				93C831331B1F421E00129118 /* Resources */,
 				93C3ED481B1F38260019696F /* Images.xcassets */,
-				93C3ED4A1B1F38260019696F /* Main.storyboard */,
 				93C3ED421B1F38260019696F /* Supporting Files */,
 			);
 			path = MoeJpDownloader;
@@ -107,6 +106,31 @@
 				93C3ED561B1F38260019696F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93C8312E1B1F421100129118 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				93C8312F1B1F421100129118 /* AppDelegate.swift */,
+				93C831301B1F421100129118 /* ViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		93C831331B1F421E00129118 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93C831341B1F421E00129118 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		93C831341B1F421E00129118 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				93C831351B1F421E00129118 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93C3ED491B1F38260019696F /* Images.xcassets in Resources */,
-				93C3ED4C1B1F38260019696F /* Main.storyboard in Resources */,
+				93C831371B1F421E00129118 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,8 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93C3ED471B1F38260019696F /* ViewController.swift in Sources */,
-				93C3ED451B1F38260019696F /* AppDelegate.swift in Sources */,
+				93C831311B1F421100129118 /* AppDelegate.swift in Sources */,
+				93C831321B1F421100129118 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,10 +256,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		93C3ED4A1B1F38260019696F /* Main.storyboard */ = {
+		93C831351B1F421E00129118 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				93C3ED4B1B1F38260019696F /* Base */,
+				93C831361B1F421E00129118 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -400,6 +424,7 @@
 				93C3ED5D1B1F38260019696F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93C3ED5E1B1F38260019696F /* Build configuration list for PBXNativeTarget "MoeJpDownloaderTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +433,7 @@
 				93C3ED601B1F38260019696F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
